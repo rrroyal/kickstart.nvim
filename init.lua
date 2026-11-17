@@ -175,6 +175,9 @@ do
   -- Nano-like Shift+Arrow selection: starts/stops selection, typing replaces it
   vim.o.keymodel = 'startsel,stopsel'
   vim.o.selectmode = 'key'
+  -- Let cursor/selection reach past the last char (end of line)
+  vim.o.selection = 'exclusive'
+  vim.o.virtualedit = 'onemore'
 end
 
 -- ============================================================
